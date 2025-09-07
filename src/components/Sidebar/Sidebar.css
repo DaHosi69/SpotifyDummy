@@ -1,0 +1,12 @@
+.sidebar{
+  background: linear-gradient(180deg, #626262 0%, #3c3b3b 100%);
+  height: 100vh;
+  width: 280px;                 /* expanded width */
+  border-radius: 10px;
+  transition: width .2s ease;   /* smooth animation */
+}
+
+/* wenn data-collapsed="true" ist */
+.sidebar[data-collapsed="true"]{
+  width: 88px;                  /* collapsed width */
+}
