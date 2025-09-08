@@ -5,13 +5,13 @@ import "./Sidebar.css";
 type Playlist = {
   id: string;
   name: string;
-  coverUrl?: string; // optionales Bild
-  color?: string; // fallback Farbkachel
+  coverUrl?: string; 
+  color?: string; 
 };
 
 type SidebarProps = {
   playlists: Playlist[];
-  active?: string; // id der aktiven Route/Playlist
+  active?: string; 
   onSelect?: (id: string) => void;
   defaultCollapsed?: boolean;
 };
