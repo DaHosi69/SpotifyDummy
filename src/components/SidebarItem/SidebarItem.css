@@ -1,0 +1,20 @@
+.container {
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+  margin: 15px;
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #bfbfbf 0%, #757575 100%);
+}
+
+.container:hover {
+  background: linear-gradient(180deg, #d9d9d9 0%, #8c8c8c 100%);
+  cursor: pointer;
+}
+
+.container:active {
+  background: linear-gradient(180deg, #8c8c8c 0%, #4c4c4c 100%);
+}

@@ -1,4 +1,5 @@
 import './App.css'
+import Bottombar from './components/Bottombar/Bottombar';
 import Sidebar from './components/Sidebar/Sidebar'
 
 const demoPlaylists = [
@@ -14,6 +15,7 @@ export default function App() {
   return (
     <>
     <Sidebar defaultCollapsed={false} playlists={demoPlaylists} />
+    <Bottombar />
     </>
   );
 }

@@ -1,6 +1,7 @@
 // src/components/Sidebar/Sidebar.tsx
 import { useState } from "react";
 import "./Sidebar.css";
+import SidebarItem from "../SidebarItem/SidebarItem";
 
 type Playlist = {
   id: string;
@@ -19,11 +20,16 @@ type SidebarProps = {
 export default function Sidebar({ defaultCollapsed = false }: SidebarProps) {
   const [collapsed, setCollapsed] = useState(defaultCollapsed);
 
+  function toggleCollapsed(){
+    setCollapsed(!collapsed);
+  }
+
   return (
     <div className="sidebar" data-collapsed={collapsed}>
-      <button onClick={() => setCollapsed(!collapsed)}>
-        {collapsed ? "Expand" : "Collapse"}
-      </button>
+      <SidebarItem onClick={toggleCollapsed} itemname="Library" />
+      <SidebarItem itemname="Lieblingssongs" />
+      <SidebarItem itemname="Home" />
+      <SidebarItem itemname="Search" />
     </div>
   );
 }

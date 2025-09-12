@@ -1,0 +1,11 @@
+.bottombar {
+  position: fixed;   /* fixiert das Element */
+  bottom: 0;         /* klebt am unteren Rand */
+  left: 0;           /* beginnt ganz links */
+  width: 100%;       /* volle Breite */
+  background-color: black;
+  display: flex;
+  align-items: center; /* vertikal innerhalb der Bar zentrieren */
+  height: 70px;       /* feste Höhe nach Bedarf */
+  z-index: 100;       /* optional, damit es oben liegt */
+}
